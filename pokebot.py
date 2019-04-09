@@ -31,7 +31,7 @@ def pokemon(bot, update):
         bot.send_photo(chat_id=chat_id, photo='https://media.treasy.com.br/media/2015/11/nao-disponivel.jpg')
 
 def main():
-    updater = Updater('871112194:AAH8D41UYTbsNe6bQLdDfAJfbGEsPMOnDXY')
+    updater = Updater('TOKEN')
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('pokemon',pokemon))
     updater.start_polling()
